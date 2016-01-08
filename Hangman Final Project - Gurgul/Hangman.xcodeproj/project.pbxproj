@@ -13,6 +13,7 @@
 		3FF7C8B21BFE6086000DFE01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7C8B11BFE6086000DFE01 /* Images.xcassets */; };
 		3FF7C8B51BFE6086000DFE01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7C8B31BFE6086000DFE01 /* LaunchScreen.xib */; };
 		3FF7C8C11BFE6086000DFE01 /* HangmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7C8C01BFE6086000DFE01 /* HangmanTests.swift */; };
+		3FF7C8CB1BFF7CF4000DFE01 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7C8CA1BFF7CF4000DFE01 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3FF7C8BA1BFE6086000DFE01 /* HangmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF7C8BF1BFE6086000DFE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FF7C8C01BFE6086000DFE01 /* HangmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanTests.swift; sourceTree = "<group>"; };
+		3FF7C8CA1BFF7CF4000DFE01 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				3FF7C8AA1BFE6086000DFE01 /* AppDelegate.swift */,
 				3FF7C8AC1BFE6086000DFE01 /* ViewController.swift */,
+				3FF7C8CA1BFF7CF4000DFE01 /* NextViewController.swift */,
 				3FF7C8AE1BFE6086000DFE01 /* Main.storyboard */,
 				3FF7C8B11BFE6086000DFE01 /* Images.xcassets */,
 				3FF7C8B31BFE6086000DFE01 /* LaunchScreen.xib */,
@@ -156,11 +159,14 @@
 		3FF7C89D1BFE6086000DFE01 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Richie Gurgul";
 				TargetAttributes = {
 					3FF7C8A41BFE6086000DFE01 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3553PD8SS6;
 					};
 					3FF7C8B91BFE6086000DFE01 = {
 						CreatedOnToolsVersion = 6.4;
@@ -214,6 +220,7 @@
 			files = (
 				3FF7C8AD1BFE6086000DFE01 /* ViewController.swift in Sources */,
 				3FF7C8AB1BFE6086000DFE01 /* AppDelegate.swift in Sources */,
+				3FF7C8CB1BFF7CF4000DFE01 /* NextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +349,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hangman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +362,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hangman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +424,7 @@
 				3FF7C8C61BFE6086000DFE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FF7C8C71BFE6086000DFE01 /* Build configuration list for PBXNativeTarget "HangmanTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +433,7 @@
 				3FF7C8C91BFE6086000DFE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
